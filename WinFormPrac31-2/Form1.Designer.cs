@@ -28,13 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lblFormTitle = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblFormTitle
+            // 
+            this.lblFormTitle.Font = new System.Drawing.Font("함초롬돋움", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblFormTitle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblFormTitle.Location = new System.Drawing.Point(12, 9);
+            this.lblFormTitle.Name = "lblFormTitle";
+            this.lblFormTitle.Size = new System.Drawing.Size(488, 78);
+            this.lblFormTitle.TabIndex = 0;
+            this.lblFormTitle.Text = "취업 넘버원!";
+            this.lblFormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFormTitle.Click += new System.EventHandler(this.lblFormTitle_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(512, 110);
+            this.Controls.Add(this.lblFormTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.Text = "3-1 급훈";
+            this.TopMost = true;
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblFormTitle;
     }
 }
 
